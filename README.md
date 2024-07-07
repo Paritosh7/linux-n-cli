@@ -27,3 +27,45 @@
 - tail ~/.bash_history will provide the last few entries in the bash_history file. So, if someone gets hold of you computer, they will be able to access the .bash_history file and can access the passwords. However, you can edit the bash_history
 
 - Remember to not copy and paste commands directly from the website if you don't understand them. Sometimes attackers highlight commands that they want, however, behind the scenes the command is different and it also have a return character which will execute your command.
+
+## Shortcuts
+
+- CTRL + A – takes you to the beginning of the line
+- CTRL + E – takes you to the end of the line
+- CTRL + K – "yank" everything after the cursor
+- CTRL + U – "yank" everything before the cursor
+- CTRL + Y - "paste" (paste in quotes because it doesn't actually go into your system clipboard) everything you yanked
+- CTRL + L - clear the screen
+- CTRL + R – reverse search through history
+
+## Signals
+
+- A signal is notification that is sent to program and it's the program's responsibility to stop or not.
+
+- CTRL + C – SIGINT
+- CTRL + D – SIGQUIT
+
+## Editors
+
+- nano, Straightforward
+- vim, complicated and not really required.
+
+## File interactions
+
+- less, used to read a file and usually considered for long files.
+- cat, similar to less, however, they are used for small files.
+- head textfile.txt, read the first lines of a file and outputs it
+- tail textfile.txt, reads the last lines of a file and outputs it
+- rm new-file.txt, removes new-file.txt
+- rm -r my-new-folder, removes my-new-folder and add -f to force everything through without confirmation (rm -r my-new-folder)
+
+## cp
+
+- cp source-file.txt destination-file.txt, copies source-file.txt into destination-file.txt
+- cp source-file.txt my-new-folder/, copies source-files.txt to my-new-folder (trailing / isn't needed)
+- cp -R source-directory destination-directory, copies everything from the source to the destination recurs
+
+## mv
+
+- mv file.txt new-name.txt, moving file.txt to new-name.txt which is in essence renaming the file.
+- mv folder-name new-folder-name, moves 1 folder to another, unlike cp where you have to recursively copy a folder into another.
